@@ -14,6 +14,10 @@ class Pet {
 
 
 
+class cat extends Pet {
+super (name, breed)
+};
+
 
 
 
@@ -30,4 +34,22 @@ class Person {
     return detail;
     }
   }
-}
+};
+
+class student extends Person {
+  constructor(name, age) {
+    super(name, age)
+    this.studentdetails = function()
+    let studentdetail = `The student's name is ${this.name} and they are ${this.age} old.`
+    return studentdetail;
+  }
+};
+
+class teacher extends Person {
+  constructor(name, age) {
+    super(name, age)
+    this.teacherdetails = function()
+    let teacherdetail = `The teacher's name is ${this.name} and they are ${this.age} old.`
+    return teacherdetail;
+  }
+};
